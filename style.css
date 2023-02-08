@@ -26,6 +26,8 @@
   --cor-strong: rgb(1, 112, 1);
   --cor-header--bottom: rgb(35, 73, 60);
   --cor-gradient-h2: rgba(100, 212, 175, 0.562);
+
+  --fonte-padrao: Arial, Verdana, Helvetica, sans-serif;
 }
 
 html,
@@ -34,6 +36,7 @@ body {
   padding: 0;
 
   background-color: var(--cor-fundo);
+  font-family: var(--fonte-padrao);
 }
 
 header {
@@ -53,26 +56,31 @@ header {
 header h1 {
   text-shadow: black 2px 2px 8px;
 
-  font-family: titulo;
+  font-family: Bebas;
   font-weight: normal;
-  font-size: 4rem;
-  margin-bottom: 2rem;
+  font-size: 3rem;
+  margin-bottom: 1.1rem;
 
   color: rgb(255, 255, 255);
 
-  padding-top: 1.6rem;
+  padding-top: 2rem;
 }
 
 header > p {
+  text-indent: 0;
+  line-height: normal;
+  
   color: rgb(255, 255, 255);
   text-shadow: 2px 2px 3px rgba(0, 0, 0, 0.534);
   font-size: 1.2em;
+  font-family: var(--fonte-padrao);
 
-  max-width: 31rem;
+  max-width: 600px;
   margin: auto;
-  padding-bottom: 1rem;
-  padding-right: 0.8rem;
-  padding-left: 0.8rem;
+  padding-bottom: 3rem;
+  padding-right: 0.6rem;
+  padding-left: 0.6rem;
+
 }
 
 nav {
@@ -92,7 +100,7 @@ nav > a {
   padding: 0.5rem;
 
   font-weight: bold;
-  transition-duration: 0.4s;
+  transition-duration: 0.6s;
 }
 
 nav > a:hover {
@@ -209,7 +217,7 @@ footer {
 footer p {
   color: white;
   text-align: center;
-
+  font-size: smaller;
   margin: 0;
 }
 
